@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 28px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+h2 {
+    font: bold 20px cursive;
+    text-align: left;
+}
+
+body {
+    text-align: center;
+}
+
+.agrupar-h {
+    margin: 90px;   
+}
+
+.header-h {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.menu {
+background: #F0F3F4;
+padding-bottom: 15px;
+text-align: left;
+}
+
+
+.menu li {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    padding: 5px;
+    font: bold 20px verdana;
+    display: inline-block;
+    font-family: cursive;
+}
+
+.menu li:hover {
+    background-color: #EB984E;
+}
+
+.seccion-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F3F4;
+    border-radius: 50px;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: whitesmoke;
+}
+/* Redes sociales */
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul .icon {
+    position: relative;
+    list-style: none;
+    margin: 0 30px;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+ul li a .fab {
+    padding-right: 27px;
+    font-size: 2em;
+    color: #222;
+    transition: all 0.6s ease;
+}
+.fab:hover {
+    transform: scale(0.9);
+}
+
+.article-h {
+    margin: 20px;
+    background-color: white;
+}
+
+.texto-h {
+    margin-top: 60px;
+    text-align: justify;
+    font-family: cursive;
+}
+
+.foto {
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+}
+.foto-h {
+    width: 500px;
+    height: 300px;
+}
+

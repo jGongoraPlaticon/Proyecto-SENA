@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    background: papayawhip;
+}
+.accion {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+}
+.accion .perfil {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.accion .perfil img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.accion .menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+.accion .menu {
+    position: absolute;
+    min-width: 250px;
+    top: 80px;
+    right: -10px;
+    border-radius: 15px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+    visibility: hidden;
+    opacity: .5;
+}
+.accion .menu::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 28px;
+    width: 28px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+.accion .menu h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.2em;
+}
+.accion .menu h3 span {
+    font-size: 14px;
+    color: #cecece;
+}
+.accion .menu ul li {
+    list-style: none;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+}
+.accion .menu ul li:hover {
+    color: green;
+    transition: .5s;
+}
+.accion .menu ul a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #555;
+}
+.accion .menu ul a img {
+    max-width: 20px;
+    margin: 0 10px;
+    opacity: .5;
+    transition: .5s;
+}
+.accion .menu ul a li:hover img {
+opacity: 1;
+}

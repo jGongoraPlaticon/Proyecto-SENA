@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.nav-t {
+    position: static;
+}
+.cuerpo {
+    margin: 50px;
+    background-color: #F0F3F4;
+    height: 1030px;
+    border-radius: 30px;
+}
+#container-t {
+    padding: 90px 145px;
+    background: #F0F3F4;
+    border-radius: 30px;
+}
+.tarjeta {
+    margin: 15px;
+    border-radius: 20px;
+    float: left;
+    transition: all 0.5s;
+}
+.tarjeta:hover {
+    transform: scale(0.9);
+}
+.card-img-top {
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 286px;
+    height: 286px;
+}
+.btn-primary {
+    background-color: #ff6b00;
+    border-color: #ff6b00;
+}
+.btn-primary:hover {
+    background-color: #a2adb1;
+    color: black;
+    border-color: white;
+}

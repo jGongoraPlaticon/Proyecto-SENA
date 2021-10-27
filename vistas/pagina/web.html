@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Cristiana Jd</title>
+    <link rel="shortcut icon" href="5.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Mi Héroe</a>
+            <div class="toggle" onclick="menuToggle()"></div>
+            <ul class="nav">
+                <li><a href="#" style="--i:1">Inicio</a></li>
+                <li><a href="#" style="--i:2">Biblia</a></li>
+                <li><a href="#" style="--i:3">Personajes</a></li>
+                <li><a href="#" style="--i:4">Juegos</a></li>
+            </ul>
+        </header>
+        <div class="contenedor">
+            <div class="caja" style="--i:3">
+                <div class="img">
+                    <img src="7.jpg" alt="">
+                </div>
+            </div>
+            <div class="caja" style="--i:4">
+                <div class="img">
+                    <img src="6.jpg" alt="">
+                </div>
+            </div>
+            <div class="caja" style="--i:5">
+                <div class="img">
+                    <img src="8.jpg" alt="">
+                </div>
+            </div>
+            <div class="caja" style="--i:6">
+                <div class="img">
+                    <img src="9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="scm">
+                <li><a href="#" style="--i:7">Facebook</a></li>
+                <li><a href="#" style="--i:8">Instagram</a></li>
+                <li><a href="#" style="--i:9">YouTube</a></li>
+            </ul>
+            <p class="copyright">@gongorajd_12. 2021</p>
+        </div>
+    </section>
+</body>
+<script>
+    let img = document.querySelectorAll('.img');
+    img.forEach(popup => popup.addEventListener('click', () => {
+        popup.classList.toggle('active');
+    }))
+    function menuToggle() {
+        const toggleMenu = document.querySelector('.toggle');
+        const nav = document.querySelector('.nav');
+        toggleMenu.classList.toggle('active');
+        nav.classList.toggle('active');
+    }
+</script>
+</html>

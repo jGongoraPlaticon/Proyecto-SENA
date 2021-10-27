@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú De Usuerio Jd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="accion" onclick="menuToggle()">
+        <div class="perfil">
+            <img src="milo.jpg">
+        </div>
+        <div class="menu">
+            <h3>Jd_1208 <br><span>gongorajd12@gmail.com</span></h3>
+            <ul>
+                <a href="#">
+                    <li>
+                        <img src="perfil.png"><span>Mi Perfil</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="editar.png"><span>Editar Perfil</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="chat.png"><span>Bandeja de Entrada</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="confi.png"><span>Configuración</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="ayuda.png"><span>Ayúda</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="salida.png"><span>Salir</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    function menuToggle() {
+        const toggleMenu = document.querySelector('.menu');
+        toggleMenu.classList.toggle('active');
+    }
+</script>
+</html>
